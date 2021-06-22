@@ -254,8 +254,7 @@ export default {
       if (this.selectedKeysList.length > 0) {
         //获取选中的分类数组中最后一个分类id，这边可能是二级分类
         //this.selectedKeysList[this.selectedKeysList.length - 1  拿到数组最后一个元素
-        this.categoryForm.cat_pid =
-          this.selectedKeysList[this.selectedKeysList.length - 1];
+        this.categoryForm.cat_pid = this.selectedKeysList[this.selectedKeysList.length - 1];
         //设置level值
         this.categoryForm.cat_level = this.selectedKeysList.length;
         return;
