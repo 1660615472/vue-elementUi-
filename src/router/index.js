@@ -22,13 +22,13 @@ const routes = [
     {
         path: '/home',
         name: 'Home',
-        redirect:'/welcome',
+        redirect: '/welcome',
         component: () => import('views/home/home'),
         children: [
             {
-                path:'/welcome',
-                name:'Welcome',
-                component:()=>import('views/welcome/welcome')
+                path: '/welcome',
+                name: 'Welcome',
+                component: () => import('views/welcome/welcome')
             },
             {
                 path: '/users',
@@ -49,6 +49,11 @@ const routes = [
                 path: '/goods',
                 name: 'GoodsLsit',
                 component: () => import('views/goods/goodsLsit')
+            },
+            {
+                path: '/goods/addGoods',
+                name: 'AddGoods',
+                component: () => import('views/goods/addGoods')
             },
             {
                 path: '/params',

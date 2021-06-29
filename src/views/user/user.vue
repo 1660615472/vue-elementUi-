@@ -351,8 +351,9 @@ export default {
       this.$refs.singleTable.setCurrentRow(row);
     },
     //当前页码发生改变的时候触发
-    handleCurrentChange(val) {
-      this.currentRow = val;
+    handleCurrentChange(newPage) {
+      this.usersInfo.pagenum = newPage;
+       this.getUsersInfo();
     },
     changeStatus(row) {
       //console.log("row", row);
